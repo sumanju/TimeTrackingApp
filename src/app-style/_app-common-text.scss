@@ -1,0 +1,315 @@
+// common variables
+// this file can be included anywhere throughout the project
+
+//=================================== EASING ===================================
+//new text font size
+$font-xs: 0.5rem;
+$font-sm: 0.625rem;
+$font-md: 0.75rem;
+$font-lg: 0.875rem;
+$font-xl: 1rem;
+$font-xxl:1.25rem;
+
+// font families
+$font-bold    : 'Roboto Bold';
+$font-regular : 'Roboto Regular';
+$font-medium  : 'Roboto Medium';
+
+$font-sans-bold    : 'Source Sans Pro Bold';
+$font-sans-regular : 'Source Sans Pro Regular';
+$font-sans-medium  : 'Source Sans Pro Medium';
+
+// font weights
+$font-weight-bolder : bolder;
+$font-weight-bold   : bold;
+$font-weight-normal : normal;
+$font-weight-light  : lighter;
+
+
+.txt-xs-bld-dark {
+  font-size: $font-xs !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xs-bld-norm {
+  font-size: $font-xs !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xs-bld-light {
+  font-size: $font-xs !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xs-reg-dark {
+  font-size: $font-xs !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xs-reg-norm {
+  font-size: $font-xs !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xs-reg-light {
+  font-size: $font-xs !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xs-med-dark {
+  font-size: $font-xs !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xs-med-norm {
+  font-size: $font-xs !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xs-med-light {
+  font-size: $font-xs !important;
+  font-family: $font-medium !important;
+}
+
+.txt-sm-bld-dark {
+  font-size: $font-sm !important;
+  font-family: $font-bold !important;
+}
+
+.txt-sm-bld-norm {
+  font-size: $font-sm !important;
+  font-family: $font-bold !important;
+}
+
+.txt-sm-bld-light {
+  font-size: $font-sm !important;
+  font-family: $font-bold !important;
+}
+
+.txt-sm-reg-dark {
+  font-size: $font-sm !important;
+  font-family: $font-regular !important;
+}
+
+.txt-sm-reg-norm {
+  font-size: $font-sm !important;
+  font-family: $font-regular !important;
+}
+
+.txt-sm-reg-light {
+  font-size: $font-sm !important;
+  font-family: $font-regular !important;
+}
+
+.txt-sm-med-dark {
+  font-size: $font-sm !important;
+  font-family: $font-medium !important;
+}
+
+.txt-sm-med-norm {
+  font-size: $font-sm !important;
+  font-family: $font-medium !important;
+}
+
+.txt-sm-med-light {
+  font-size: $font-sm !important;
+  font-family: $font-medium !important;
+}
+
+.txt-md-bld-dark {
+  font-size: $font-md !important;
+  font-family: $font-bold !important;
+}
+
+.txt-md-bld-norm {
+  font-size: $font-md !important;
+  font-family: $font-bold !important;
+}
+
+.txt-md-bld-light {
+  font-size: $font-md !important;
+  font-family: $font-bold !important;
+}
+
+.txt-md-reg-dark {
+  font-size: $font-md !important;
+  font-family: $font-regular !important;
+}
+
+.txt-md-reg-norm {
+  font-size: $font-md !important;
+  font-family: $font-regular !important;
+}
+
+.txt-md-reg-light {
+  font-size: $font-md !important;
+  font-family: $font-regular !important;
+}
+
+.txt-md-med-dark {
+  font-size: $font-md !important;
+  font-family: $font-medium !important;
+}
+
+.txt-md-med-norm {
+  font-size: $font-md !important;
+  font-family: $font-medium !important;
+}
+
+.txt-md-med-light {
+  font-size: $font-md !important;
+  font-family: $font-medium !important;
+}
+
+.txt-lg-bld-dark {
+  font-size: $font-lg !important;
+  font-family: $font-bold !important;
+}
+
+.txt-lg-bld-norm {
+  font-size: $font-lg !important;
+  font-family: $font-bold !important;
+}
+
+.txt-lg-bld-light {
+  font-size: $font-lg !important;
+  font-family: $font-bold !important;
+}
+
+.txt-lg-reg-dark {
+  font-size: $font-lg !important;
+  font-family: $font-regular !important;
+}
+
+.txt-lg-reg-norm {
+  font-size: $font-lg !important;
+  font-family: $font-regular !important;
+}
+
+.txt-lg-reg-light {
+  font-size: $font-lg !important;
+  font-family: $font-regular !important;
+}
+
+.txt-lg-med-dark {
+  font-size: $font-lg !important;
+  font-family: $font-medium !important;
+}
+
+.txt-lg-med-norm {
+  font-size: $font-lg !important;
+  font-family: $font-medium !important;
+}
+
+.txt-lg-med-light {
+  font-size: $font-lg !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xl-bld-dark {
+  font-size: $font-xl !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xl-bld-norm {
+  font-size: $font-xl !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xl-bld-light {
+  font-size: $font-xl !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xl-reg-dark {
+  font-size: $font-xl !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xl-reg-norm {
+  font-size: $font-xl !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xl-reg-light {
+  font-size: $font-xl !important;
+  font-family: $font-regular !important;
+}
+
+.txt-xl-med-dark {
+  font-size: $font-xl !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xl-med-norm {
+  font-size: $font-xl !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xl-med-light {
+  font-size: $font-xl !important;
+  font-family: $font-medium !important;
+}
+
+.txt-xxl-bld-dark {
+  font-size: $font-xxl !important;
+  font-family: $font-bold !important;
+}
+
+.txt-xs-bld-dark,
+.txt-xs-bld-light,
+.txt-xs-bld-norm,
+.txt-sm-bld-dark,
+.txt-sm-bld-light,
+.txt-sm-bld-norm,
+.txt-md-bld-dark,
+.txt-md-bld-light,
+.txt-md-bld-norm,
+.txt-lg-bld-dark,
+.txt-lg-bld-light,
+.txt-lg-bld-norm,
+.txt-xl-bld-dark,
+.txt-xl-bld-light,
+.txt-xl-bld-norm,
+.txt-xxl-bld-dark,
+.button-medium,
+.button-small{
+  font-family: $font-sans-bold !important;
+}
+
+.txt-xs-reg-dark,
+.txt-xs-reg-light,
+.txt-xs-reg-norm,
+.txt-sm-reg-dark,
+.txt-sm-reg-light,
+.txt-sm-reg-norm,
+.txt-md-reg-dark,
+.txt-md-reg-light,
+.txt-md-reg-norm,
+.txt-lg-reg-dark,
+.txt-lg-reg-light,
+.txt-lg-reg-norm,
+.txt-xl-reg-dark,
+.txt-xl-reg-light,
+.txt-xl-reg-norm {
+  font-family: $font-sans-regular !important;
+}
+
+.txt-xs-med-dark,
+.txt-xs-med-light,
+.txt-xs-med-norm,
+.txt-sm-med-dark,
+.txt-sm-med-light,
+.txt-sm-med-norm,
+.txt-md-med-dark,
+.txt-md-med-light,
+.txt-md-med-norm,
+.txt-lg-med-dark,
+.txt-lg-med-light,
+.txt-lg-med-norm,
+.txt-xl-med-dark,
+.txt-xl-med-light,
+.txt-xl-med-norm {
+  font-family: $font-sans-medium !important;
+}
+

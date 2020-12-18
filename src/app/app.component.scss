@@ -1,0 +1,20 @@
+.web  {
+
+  .header {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid opacity($color: gray);
+  }
+
+  .box-shadow {
+    box-shadow: 12px 8px 12px 0px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .cont {
+    height: 94vh;
+    width: 100%;
+  }
+}

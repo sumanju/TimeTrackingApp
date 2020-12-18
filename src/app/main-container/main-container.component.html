@@ -1,0 +1,74 @@
+<div  [ngClass]="'web'"  
+      [ngClass.lt-md]="'mobile'">
+
+  <div *ngIf="errorDlg" class="msg">
+    <h4>Please Enter Task Name</h4>
+  </div>
+
+  <mat-card class="box-shadow timer-cont">
+    <div  class="timer-left-cont">
+      <input type="text"  
+             class="text-box" 
+             placeholder="please Enter task name"
+             (change)="setTaskName($event)"
+             [disabled]="task.startTs"/>
+    </div>
+    <div  class="timer-right-cont">
+      <div  class="time">
+        {{ timeFmt }}
+      </div>
+      <button [ngClass]="task.startTs  ? 'button-stop' : 'button-start'"
+              (click)="task.startTs ?  endTimer() : startTimer()">
+        {{  task.startTs ? 'Stop'  : 'start'  }} 
+      </button>
+    </div>
+  </mat-card>
+
+  <div class="history-header">
+    <div>
+      <h3 > {{ 'History Records' }} </h3>
+    </div>
+   
+      <input type="text"  
+             class="search" 
+             placeholder="Search By Task Name"
+             (keyup)="search($event)"/>
+  </div>
+
+  <ng-container *ngFor="let obj of timer;let index = index">
+
+    <mat-card class="box-shadow history-cont"
+              *ngIf="obj.taskName.toLowerCase().search(searchKey.toLowerCase()) >= 0">
+      <div  class="history-left">
+        <span  *ngIf="editingInd != index">  {{ obj.taskName }}  </span>
+        <input *ngIf="editingInd == index" 
+               type="text"  
+               class="edit-box"
+               value="{{obj.taskName}}"
+               (keyup)="edit($event)"/>
+      </div>
+      <div  class="history-right">
+        <div  class="time"  style="margin: 0 1vw;">
+          {{ obj.startTs | date }}
+        </div>
+        <span>  {{ '-' }}  </span>
+        <div  class="time"  style="margin: 0 1vw;">
+          {{ obj.endTs | date }}
+        </div>
+        <div  class="time"  style="margin: 0 4vw;">
+          {{ obj.timeDiff | timeformat }}
+        </div>
+        <div  style="margin: 0 1vw;">
+          <span *ngIf="editingInd != index" style="cursor: pointer;" (click)="editIdx(index)">edit</span>
+          <span *ngIf="editingInd == index" style="cursor: pointer;" (click)="saveCancel('ACTION.SAVE')"> Save </span>
+        </div>
+        <div  style="margin: 0 1vw;">
+          <span *ngIf="editingInd != index" style="cursor: pointer;" (click)="delete(index)">delete</span>
+          <span *ngIf="editingInd == index" style="cursor: pointer;" (click)="saveCancel('ACTION.CANCEL')"> Cancel </span>      
+        </div>
+      </div>
+    </mat-card>
+
+  </ng-container>
+
+</div>

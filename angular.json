@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/app-style/app-style.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "time-tracker"
+    }
+  },
+  "defaultProject": "time-tracker",
+  "cli": {
+    "analytics": "312b7cc7-bba7-4616-99e1-b15f93fc74f4"
+  }
 }

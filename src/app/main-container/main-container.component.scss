@@ -1,0 +1,97 @@
+.web  {
+  background-color: #f2f6f8;  
+  min-height: 94vh;
+  padding: 0% 4vw;
+  overflow: scroll;
+
+  .msg  {
+    position: absolute;
+    color: red;
+    right: 1vw;
+    top: 0;
+  }
+  
+  .box-shadow {
+    box-shadow: 12px 8px 12px 0px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .timer-cont {
+    margin: 4vh 0 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .timer-left-cont {
+      width: 40%;
+      
+      .text-box {
+        width: 100% ;
+        padding: 0.5em;
+        font-size: 0.9em;
+        border: 1px solid;
+      }
+    }
+
+    .timer-right-cont {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .time {
+        margin-right: 2vw;
+      }
+
+      .button-start {
+        padding: 0.4em  0.8em;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+      }
+
+      .button-stop  {
+        padding: 0.4em  0.8em;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .history-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+
+    .search {
+      padding: 0.5em;
+      width: 30vw;
+      border: 1px solid;
+    }
+  }
+
+  .history-cont {
+    margin-bottom: 2vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .edit-box {
+      border: 1px solid;
+      padding: 5px 0.4em;
+      width: 20vw;
+    }
+
+    .history-right  {
+      display: flex;
+      flex-direction: row;
+
+      .time{
+        color: gray;
+        font-weight: 300;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,46 @@
+@import '~@angular/material/theming';
+@import 'app-common-class';
+
+@include mat-core();      
+
+@mixin my-material-theme($theme) {
+  @include common-theme-color($theme);
+}
+
+
+$candy-app-primary: mat-palette($mat-green);
+$candy-app-accent:  mat-palette($mat-pink);
+
+$candy-app-theme: mat-light-theme((
+  color: (
+    primary: $candy-app-primary,
+    accent: $candy-app-accent
+  )
+));
+
+@include angular-material-theme($candy-app-theme);
+@include my-material-theme($candy-app-theme)
+
+
+
+
+// @function nc-mat-light-theme($primary, $accent, $warn) {
+//   @return (
+//     primary: $primary,
+//     accent: $accent,
+//     warn: $warn,
+//     is-dark: true,
+//     foreground: $warn,
+//     background: $warn
+//   );
+// }
+
+// $nc-light-primary : mat-palette($mat-blue);
+// $nc-light-accent  : mat-palette($mat-red);
+// $nc-light-warn    : mat-palette($mat-blue);
+
+// $nc-light-theme   : nc-mat-light-theme($nc-light-primary, 
+//                                        $nc-light-accent,
+//                                        $nc-light-warn);
+
+// @include angular-material-theme($nc-light-theme);

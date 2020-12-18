@@ -1,0 +1,50 @@
+
+
+@mixin common-theme-color($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  // background colors
+  .primary-color {
+    background-image: linear-gradient(to bottom, #0f0c29 , #302b63 , #24243e);
+  }
+
+  .init-background {
+    background-image: linear-gradient(to bottom, #0f0c29 , #302b63 , #24243e 30%, transparent 30%);
+    width: 100% !important;
+    height: 100% !important;
+    overflow-y: hidden;
+  }
+
+  .primary-button-inact {
+    padding: 1rem 2vw;
+    width: 100%;
+    border: none;
+  }
+
+  .primary-button-act {
+    padding: 1rem 2vw;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(to bottom, #0f0c29 , #302b63 , #24243e);
+    color: white;
+  }
+
+  .shadow-box {
+    padding: 6vh 6vw;
+    height: fit-content;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 2px 4px 12px rgba($color: #000000, $alpha: 1.0);
+  }
+
+  mat-form-field {
+    width: 92%;
+    margin-left: 4%;
+    background-color: aliceblue;
+    margin-top: 10px;
+  }
+}
