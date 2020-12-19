@@ -49,11 +49,11 @@
       </div>
       <div  class="history-right">
         <div  class="time"  style="margin: 0 1vw;">
-          {{ obj.startTs | date }}
+          {{ obj.startTs | date }}  {{ obj.startTs | date:'shortTime' }}
         </div>
         <span>  {{ '-' }}  </span>
         <div  class="time"  style="margin: 0 1vw;">
-          {{ obj.endTs | date }}
+          {{ obj.endTs | date }} {{ obj.endTs | date:'shortTime' }}
         </div>
         <div  class="time"  style="margin: 0 4vw;">
           {{ obj.timeDiff | timeformat }}

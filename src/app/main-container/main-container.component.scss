@@ -89,6 +89,7 @@
     .history-right  {
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
 
       .time{
         color: gray;
